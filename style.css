@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(231, 215, 191);
+    background: url(./images/zulrah.png);
+}
+
+h1 {
+    text-align: center;
+}
+
+.logo {
+    max-width: 400px;
+    align-self: center;
+    margin-left: auto;
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-color: rgba(236, 230, 220, 0.9);
+    font-size: 30px;
+    font-family: "Lato";
+    min-width: 40vw;
+}
+
+.selection label {
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.selection select {
+    font-size: 28px;
+    font-family: "Lato";
+}
+
+.overall-level {
+    display: flex;
+    background-color: rgba(30, 128, 0, 0.9);
+    height: 50px;
+    min-width: 40vw;
+    font-size: 24px;
+    color: white;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.league-points {
+    display: flex;
+    background-color: rgba(128, 0, 0, 0.9);
+    height: 50px;
+    min-width: 40vw;
+    font-size: 24px;
+    color: white;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(236, 230, 220, 0.9);
+}
+
+.column {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+    border-right: 3px;
+    border-color: black;
+}
+
+.skills {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin: 10px 0;
+}
+
+.skills li span {
+    font-weight: bold;
+}
+
+.icon-small {
+    height: 25px;
+    width: 25px;
+}
