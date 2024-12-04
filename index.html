@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Leagues App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <img class="logo" src="./images/logo_2.webp" alt="logo" />
+
+        <!-- Dropdown for selecting a username -->
+        <div class="selection">
+            <label for="username">Select a username:</label>
+            <select id="username">
+                <option value="" disabled selected>Select a username</option>
+            </select>
+        </div>
+
+        <!-- Overall level and League points (currently empty) -->
+        <div class="overall-level">
+            <img
+                class="icon-small"
+                src="./images/Overall_icon.webp"
+                alt="icon"
+            />
+            <p>Overall Level: <span id="overall"></span></p>
+        </div>
+
+        <div class="league-points">
+            <img
+                class="icon-small"
+                src="./images/Leaguepoints_icon.webp"
+                alt="icon"
+            />
+            <p>League Points: <span id="league-points"></span></p>
+        </div>
+
+        <!-- Three columns for skill levels -->
+        <div class="columns">
+            <!-- Left Column -->
+            <div class="column">
+                <ul class="skills">
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Attack_icon.webp"
+                            alt="icon"
+                        />
+                        Attack: <span id="attack"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Strength_icon.webp"
+                            alt="icon"
+                        />
+                        Strength: <span id="strength"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Defence_icon.webp"
+                            alt="icon"
+                        />
+                        Defence: <span id="defence"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Ranged_icon.webp"
+                            alt="icon"
+                        />
+                        Ranged: <span id="ranged"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Prayer_icon.webp"
+                            alt="icon"
+                        />
+                        Prayer: <span id="prayer"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Magic_icon.webp"
+                            alt="icon"
+                        />
+                        Magic: <span id="magic"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Runecraft_icon.webp"
+                            alt="icon"
+                        />
+                        Runecraft: <span id="runecraft"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Construction_icon.webp"
+                            alt="icon"
+                        />
+                        Construction: <span id="construction"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Middle Column -->
+            <div class="column">
+                <ul class="skills">
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Hitpoints_icon.webp"
+                            alt="icon"
+                        />
+                        Hitpoints: <span id="hitpoints"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Agility_icon.webp"
+                            alt="icon"
+                        />
+                        Agility: <span id="agility"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Herblore_icon.webp"
+                            alt="icon"
+                        />
+                        Herblore: <span id="herblore"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Thieving_icon.webp"
+                            alt="icon"
+                        />
+                        Thieving: <span id="thieving"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Crafting_icon.webp"
+                            alt="icon"
+                        />
+                        Crafting: <span id="crafting"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Fletching_icon.webp"
+                            alt="icon"
+                        />
+                        Fletching: <span id="fletching"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Slayer_icon.webp"
+                            alt="icon"
+                        />
+                        Slayer: <span id="slayer"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Hunter_icon.webp"
+                            alt="icon"
+                        />
+                        Hunter: <span id="hunter"></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right Column -->
+            <div class="column">
+                <ul class="skills">
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Mining_icon.webp"
+                            alt="icon"
+                        />
+                        Mining: <span id="mining"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Smithing_icon.webp"
+                            alt="icon"
+                        />
+                        Smithing: <span id="smithing"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Fishing_icon.webp"
+                            alt="icon"
+                        />
+                        Fishing: <span id="fishing"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Cooking_icon.webp"
+                            alt="icon"
+                        />
+                        Cooking: <span id="cooking"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Firemaking_icon.webp"
+                            alt="icon"
+                        />
+                        Firemaking: <span id="firemaking"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Woodcutting_icon.webp"
+                            alt="icon"
+                        />
+                        Woodcutting: <span id="woodcutting"></span>
+                    </li>
+                    <li>
+                        <img
+                            class="icon-small"
+                            src="./images/Farming_icon.webp"
+                            alt="icon"
+                        />
+                        Farming: <span id="farming"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JavaScript to populate the dropdown and update skill levels -->
+        <script src="script.js"></script>
+    </body>
+</html>
